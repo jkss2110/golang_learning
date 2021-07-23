@@ -16,7 +16,17 @@ func (uc userController) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("Anupa Suresh is a oola"))
 		i++
 	}
-
+	slice := []int{1, 2, 3}
+	for i := 0; i < len(slice); i++ {
+		println(slice[i])
+	}
+	for i, v := range slice { // Same as the previous
+		println(i, v)
+	}
+	wellknownport := map[string]int{"http": 80, "https": 443}
+	for k, v := range wellknownport {
+		println(k, v)
+	}
 }
 
 // Constructor, by convention new is given as staring
