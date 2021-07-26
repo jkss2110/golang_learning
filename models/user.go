@@ -17,6 +17,11 @@ var (
 )
 
 func GetUsers() []*User {
+	/*var u User
+	u.ID = 3
+	u.FirstName = "jk"
+	u.LastName = "kj"
+	users = append(users, &u)*/
 	return users
 }
 
